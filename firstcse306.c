@@ -1,7 +1,7 @@
 /*just allocating queues to the proceses based up on priority as mentioned in the question*/
 #include<unistd.h>
 #include<stdio.h>
-#include<stdlib.h>
+
 
 int b_time1[50],b_time2[50],b_time3[50];   //   array for burst time
 int arr1[50],arr2[50],arr3[50];            //   array for arrival time
