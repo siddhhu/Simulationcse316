@@ -117,7 +117,7 @@ void Priority()                                                                 
 
 }
 
-void roundRobin()                                                                //High Priority process --> Round Robin Algorithm  (In this time quantum is 4)                                                   
+void roundRobin()                                                                //High Priority processes --> Round Robin Algorithm  (In this time quantum is 4)                                                   
 {
 	printf("Time Quantum for Queue1 is 4\n");
 	for(i=0;i<j;i++)
@@ -170,7 +170,7 @@ void roundRobin()                                                               
     printf("\n\t\t\t\tAverage Turnaround Time  :%.3f\n",avg_turn_time1); 
     printf("\t\t\t\t\---------------------------------");
 }
-void roundRobin1()                                                           //This round robin function is for time quantum 10                                                 
+void roundRobin1()                                                           //This round robin function is for time quantum 10 units                                               
 {
 	printf("\n\nTime Quantum between the 3 queues is 10\n");
 	for(i=1;i<Total;i=i+10)
