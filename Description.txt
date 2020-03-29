@@ -1,0 +1,9 @@
+Constraints applied on the following algorithms are :
+  a. No. of processes should be positive
+  b. Higher priority processes should run for a fixed amount of time.
+  c. if batch processes will be running and at the same time if system process comes then the batch process should be preempted.
+
+Boundary condition of the given problem is :
+  a. if Priority of a process is between 1-5 then the process will be of higher priority and it will perform round robin scheduling.
+  b. if Priority of a process is between 6-10 then the process will be of medium priority and it will perform priority scheduling.
+  c. if Priority of a process is between 11-15 then the process will be of lower priority and it will perform first come first serve scheduling.
