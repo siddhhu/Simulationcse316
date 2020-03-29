@@ -65,5 +65,5 @@ void Priority()                                                                 
 	}
 int main()
    {
-        Priority()
+        Priority();
    }
