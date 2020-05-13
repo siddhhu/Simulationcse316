@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
-void FirstCome()                                                              //low Priority process -->First Come First Serve
+
+void FirstCome()			//low Priority process -->First Come First Serve
 {
 	wait_time1[0] = 0;   
     for (i=1; i<l; i++)
@@ -14,7 +15,8 @@ void FirstCome()                                                              //
     
     for (i=0; i<l; i++)
     {
-        turnaround_time3[i] = b_time3[i] + wait_time1[i];                               //As Turnaround time = Burst time + Waiting time
+					//As Turnaround time = Burst time + Waiting time
+	turnaround_time3[i] = b_time3[i] + wait_time1[i];             
         avg_wait_time3 = avg_wait_time3 + wait_time1[i];                            
         avg_turn_time3 = avg_turn_time3 + turnaround_time3[i];
         printf("\nProcess%d\t\t%d\t\t%d\t\t%d\n", i+1, b_time3[i], wait_time1[i], turnaround_time3[i]);
@@ -28,8 +30,8 @@ void FirstCome()                                                              //
     	{
     		if (b_time3[i] > 10)
     		{
-				printf("\nProcess%d of Queue3 is running for 10 unit of time", i+1);
-				b_time3[i] = b_time3[i]-10;
+			printf("\nProcess%d of Queue3 is running for 10 unit of time", i+1);
+			b_time3[i] = b_time3[i]-10;
 			}
 			else if (b_time3[i] <= 10)
 			{
@@ -37,8 +39,10 @@ void FirstCome()                                                              //
 				b_time3[i] = 0;
 			}
 		}
-	}
+    }
+}
+
 int main()
-     {
+{
         Firstcome();
-     }
+}
